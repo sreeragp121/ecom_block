@@ -1,4 +1,6 @@
+import 'package:block_samble/controllers/api/login_api.dart';
 import 'package:block_samble/controllers/api/product_api.dart';
+import 'package:block_samble/controllers/blocs/login_bloc/login_bloc.dart';
 import 'package:block_samble/controllers/blocs/navbar_bloc/nav_bar_bloc.dart';
 import 'package:block_samble/controllers/blocs/product_bloc/product_bloc.dart';
 import 'package:block_samble/controllers/blocs/splash_bloc/splash_bloc.dart';
@@ -25,6 +27,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider<ProductBloc>(
           create: (context) =>ProductBloc(apiService: ApiService())..add(FetchProducts()) ,
+        ),
+        BlocProvider<LoginBloc>(
+          create: (context) =>LoginBloc(authRepository: AuthRepository()),
         ),
       ],
       child: const MaterialApp(
