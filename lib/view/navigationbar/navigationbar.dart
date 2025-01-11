@@ -1,7 +1,7 @@
 import 'package:block_samble/controllers/blocs/navbar_bloc/nav_bar_bloc.dart';
 import 'package:block_samble/view/cart_page/cart_screen.dart';
 import 'package:block_samble/view/home_screen/home_screen.dart';
-import 'package:block_samble/view/menu/menu_screen.dart';
+import 'package:block_samble/view/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

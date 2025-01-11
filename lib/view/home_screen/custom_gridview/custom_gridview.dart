@@ -44,6 +44,7 @@ class CustomGridview extends StatelessWidget {
                         image: data1!.image,
                         price: '',
                         name: 'Tagerian Shirt',
+                        product: data1!,
                       ),
                     )
                   : Container(),
@@ -54,7 +55,7 @@ class CustomGridview extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => DetailPage(
-                                product: data2!,
+                                product: data1!,
                               ),
                             ));
                       },
@@ -65,6 +66,7 @@ class CustomGridview extends StatelessWidget {
                         image: data2!.image,
                         price: '250.60',
                         name: 'Tagerian Shirt',
+                        product: data2!,
                       ),
                     )
                   : Container(),
@@ -91,6 +93,7 @@ class CustomGridview extends StatelessWidget {
                         image: data3!.image,
                         price: '250.60',
                         name: 'Tagerian Shirt',
+                        product: data3!,
                       ),
                     )
                   : Container(),
@@ -112,6 +115,7 @@ class CustomGridview extends StatelessWidget {
                         image: data4!.image,
                         price: '250.60',
                         name: 'Tagerian Shirt',
+                        product: data4!,
                       ),
                     )
                   : Container(),

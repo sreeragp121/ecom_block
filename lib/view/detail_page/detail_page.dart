@@ -1,5 +1,4 @@
 import 'package:block_samble/controllers/blocs/cart_block/cart_bloc.dart';
-import 'package:block_samble/main.dart';
 import 'package:block_samble/models/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -99,7 +98,8 @@ class DetailPage extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(5),
-                          border: Border.all(width: 2)),
+                          border: Border.all(
+                              width: 2, color: Colors.orange.shade600)),
                       child: const Center(
                           child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -119,24 +119,6 @@ class DetailPage extends StatelessWidget {
                   const SizedBox(
                     width: 20,
                   ),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      height: 50,
-                      width: 150,
-                      decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(5)),
-                      child: const Center(
-                          child: Text(
-                        "BUY NOW",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600),
-                      )),
-                    ),
-                  )
                 ],
               ),
             ],

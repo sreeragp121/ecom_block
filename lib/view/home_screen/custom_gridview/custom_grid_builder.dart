@@ -46,11 +46,13 @@ class MyCustomGridBuilder extends StatelessWidget {
                   data1: data1, data2: data2, data3: data3, data4: data4);
             },
           );
-        } else if (state is ProductError) {
+        } 
+        else if (state is ProductError) {
           return Center(
             child: Text(state.errorMessage),
           );
-        } else {
+        }
+         else {
           return Container();
         }
       },
